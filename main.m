@@ -9,8 +9,8 @@ ID = [ "DATA_01_TYPE01", "DATA_02_TYPE02", "DATA_03_TYPE02", "DATA_04_TYPE02", .
 for itr = 1:1
 	ppg_data = '.mat';
 	ground_data = '_BPMtrace.mat';
-    load(strcat(ID(itr), ppg_data));
-    load(strcat(ID(itr), ground_data));
+    load(strcat(ID(itr + 1), ppg_data));
+    load(strcat(ID(itr + 1), ground_data));
     sig = sig(2:end,:);
     % disp('HEYyasdsa'); 
     sampling_rate = 125;							% 125 Hz
