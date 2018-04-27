@@ -36,7 +36,7 @@ for itr = 1:1
     % peaks = []
 %     for i = 1 : window_number
 % % 	    Find peaks and BPM without SPT
-% 		[pks , locs]=findpeaks(ppg_filtered(i),f);
+% 		[pks , locs]=findpeaks(peaks_all(i),f);
 % 		[,index]= max (pks);
 % 		peaks = locs(index) ;
 %     	if(i > 3)
